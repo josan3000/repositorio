@@ -1,0 +1,46 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package unidadtres;
+import java.util.*;
+/**
+ *
+ * @author josan
+ */
+public class Ejercicio12U3 {
+public static void seleccion(String nombre,String opcion){
+    String a="a",b="b",c="c";
+    
+    if(opcion.equals(a)){
+       System.out.println(""+nombre+", Hola como estas? "); 
+      
+    }   
+    if(opcion.equals(b)){
+        System.out.println(""+nombre+", Hola com et troves?");
+    }
+    if( opcion.equals(c)){
+        System.out.println(""+nombre+", Hello how are you?");
+    }
+    
+   
+    }
+    
+    
+
+
+    
+    
+    public static void main(String [] args ){
+    Scanner recoger=new Scanner(System.in);
+    System.out.println("Accediendo al sistema...");
+    System.out.println("Introduzca su nombre...por favor");
+    String nombre="";
+    nombre=recoger.nextLine();
+    System.out.println("Escoja su idioma");
+    System.out.println("a) Castellano b) Valenciano c) Ingles");
+    String opcion=" ";
+    opcion = recoger.nextLine();
+    
+    seleccion(nombre,opcion);
+}
